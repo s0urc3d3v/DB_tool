@@ -9,7 +9,7 @@ public class Main {
     public static String fileName = "DB";
     public static BufferedReader reader;
     public static BufferedWriter writer;
-    public static void main(String[] args) {
+    public Main(){
         try {
             reader = new BufferedReader(new FileReader(fileName));
             reader.mark(0);
