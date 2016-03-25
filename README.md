@@ -1,6 +1,6 @@
 #DB TOOL
 
-##This tool offers a convient and useful frontend for saving preferances and writing and reading them from a file.
+##This tool offers a convient and useful frontend for saving preferances, writing, and reading them from a file.
 
 ###The code is documents in java doc form allowing for clear explanation of all methods included.
 
