@@ -4,11 +4,11 @@ import java.util.*;
 /**
  * Created by s0urc3d3v3l0pm3nt on 1/20/2016.
  */
-public class Main {
-    public static LinkedHashMap<String, Boolean> prefs = new LinkedHashMap<>();
-    public static String fileName = "DB";
-    public static BufferedReader reader;
-    public static BufferedWriter writer;
+class Main {
+    static LinkedHashMap<String, Boolean> prefs = new LinkedHashMap<>();
+    private static String fileName = "DB";
+    private static BufferedReader reader;
+    private static BufferedWriter writer;
     public Main(){
         try {
             reader = new BufferedReader(new FileReader(fileName));
@@ -131,6 +131,10 @@ public class Main {
         return (String) prefs.keySet().toArray()[index];
     }
 
+    public static boolean getValueWithIndexFromMap(int index){
+        return (boolean) prefs.values().toArray()[index];
+    }
+
     /**
      * Appends a key pair to the database file.
      *
@@ -141,4 +145,7 @@ public class Main {
     public static void appendKeyPairToFile(String key, boolean value) throws IOException {
         writer.append(key).append(":").append(String.valueOf(value));
     }
+
+
+
 }

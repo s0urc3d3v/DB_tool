@@ -19,4 +19,11 @@ public class Tests {
         assertEquals(true, (boolean) Main.prefs.get("testGetPref"));
     }
 
+    @Test
+    public void testGetValueWithIndex(){
+        Main.prefs.put("testGetValueWithIndex", true);
+        assertEquals(true, Main.getValueWithIndexFromMap(Main.prefs.size() - 1));
+    }
+
+
 }
